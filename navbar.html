@@ -12,8 +12,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+    integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -247,44 +251,7 @@
   </div>
   <div>
 
-    <!-- <div class="TESTIMONIALS-top">
-    <div class="TESTIMONIALS">
-      05/TESTIMONIALS
-    </div>
-    <div class="TESTIMONIALS-heading">
-      Praise From Our Partners
-    </div>
-    <div>
-    <div class="review">
-      <div class="rating-test">
-        100+
-      </div>
-      <div class="star-review">
-        5-Star Reviews
-      </div>
-    </div>
-  </div>
-</div>
-  <div class="review-btn">
-    <button class="btn-review">
-      <input type="button" value="Paid Media">
-    </button>
-    <button class="btn-review">
-      <input type="button" value="Strategy">
-    </button>
-    <button class="btn-review">
-      <input type="button" value="SEO">
-    </button>
-    <button class="btn-review">
-      <input type="button" value="Communication">
-    </button>
-    <button class="btn-review">
-      <input type="button" value="Results">
-    </button>
-    <button class="btn-review">
-      <input type="button" value="Design">
-    </button>
-  </div> -->
+
     <div class="bg">
       <div class="case-studies">
         04/CASE STUDIES
@@ -292,73 +259,289 @@
       <div class="case-studies-heading">
         Real Stories, Real Results
       </div>
-      <div class="container-slide">
-        <span class="slider" id="slider1"></span>
-        <span class="slider" id="slider2"></span>
-        <span class="slider" id="slider3"></span>
-        <span class="slider" id="slider4"></span>
-        <span class="slider" id="slider5"></span>
-        <span class="slider" id="slider6"></span>
-        <span class="slider" id="slider7"></span>
+      <div class="slider-one">
+        <div class="slick-slider-inner">
+          <img src="1.jpeg" alt="">
+        </div>
+        <div class="slick-slider-inner">
+          <img src="2.jpeg" alt="">
+        </div>
+        <div class="slick-slider-inner">
+          <img src="3.jep.webp" alt="">
+        </div>
+        <div class="slick-slider-inner">
+          <img src="4.jpeg" alt="">
+        </div>
+        <div class="slick-slider-inner">
+          <img src="5.jpeg" alt="">
+        </div>
+        <div class="slick-slider-inner">
+          <img src="6.jpeg" alt="">
+        </div>
+        <div class="slick-slider-inner">
+          <img src="7.jpeg" alt="">
+        </div>
+      </div>
 
-        <div class="imgContainer">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.5.2/jquery-migrate.min.js"
+        integrity="sha512-BzvgYEoHXuphX+g7B/laemJGYFdrq4fTKEo+B3PurSxstMZtwu28FHkPKXu6dSBCzbUWqz/rMv755nUwhjQypw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-          <div class="slide_div" id="slide_1">
-            <img src="1.jpeg" alt="" class="img" id="img1">
-            <div class="slide-text">
-              <div></div>
-              <div></div>
-            </div>
-            <a href="#slider1" class="button" id="button1"></a>
+      <script>
+        $(document).ready(function () {
+          $('.slider-one').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            slidesToShow: 3,
+            responsive: [
+              {
+                breakpoint: 1024,
+                settings: {
+                  centerMode: true,
+                  centerPadding: '40px',
+                  slidesToShow: 2
+                }
+              },
+              {
+                breakpoint: 700,
+                settings: {
+                  centerMode: true,
+                  centerPadding: '40px',
+                  slidesToShow: 1
+                }
+              }
+            ]
+          });
+        })
+      </script>
+    </div>
+
+
+    <div class="TESTIMONIALS-top">
+      <div>
+        <div class="TESTIMONIALS">
+          05/TESTIMONIALS
+        </div>
+        <div class="TESTIMONIALS-heading">
+          We Branded, They Reviewed
+        </div>
+      </div>
+      <div>
+        <div class="review">
+          <div class="rating-test">
+            100+
           </div>
-          <div class="slide_div" id="slide_2">
-            <img src="2.jpeg" alt="" class="img" id="img2">
-            <a href="#slider2" class="button" id="button2"></a>
-          </div>
-          <div class="slide_div" id="slide_3">
-            <img src="3.jep.webp" alt="" class="img" id="img3">
-            <a href="#slider3" class="button" id="button3"></a>
-          </div>
-          <div class="slide_div" id="slide_4">
-            <img src="4.jpeg" alt="" class="img" id="img4">
-            <a href="#slider4" class="button" id="button4"></a>
-          </div>
-          <div class="slide_div" id="slide_5">
-            <img src="5.jpeg" alt="" class="img" id="img5">
-            <a href="#slider5" class="button" id="button5"></a>
-          </div>
-          <div class="slide_div" id="slide_6">
-            <img src="6.jpeg" alt="" class="img" id="img6">
-            <a href="#slider6" class="button" id="button6"></a>
-          </div>
-          <div class="slide_div" id="slide_7">
-            <img src="7.jpeg" alt="" class="img" id="img7">
-            <a href="#slider7" class="button" id="button7"></a>
+          <div class="star-review">
+            5-Star Reviews
           </div>
         </div>
       </div>
     </div>
-    <!-- <div class="your-class">
-  <div>your content</div>
-  <div>your content</div>
-  <div>your content</div>
-</div>
+    <div class="review-btn">
+      <button class="btn-review-margin">
+        <input type="button" value="Paid Media">
+      </button>
+      <button class="btn-review">
+        <input type="button" value="Strategy">
+      </button>
+      <button class="btn-review">
+        <input type="button" value="SEO">
+      </button>
+      <button class="btn-review">
+        <input type="button" value="Communication">
+      </button>
+      <button class="btn-review">
+        <input type="button" value="Results">
+      </button>
+      <button class="btn-review">
+        <input type="button" value="Design">
+      </button>
+    </div>
+    <div>
+      <div class="carousel-wrapper">
+        <div class="wrapper">
+          <div class="carousel">
+            <div>
+              <div class="card">
+                <div class="card-header">
+                  <img src="profile.jpeg">
+                  <h1>Matthew Crowther, Esq.</h1>
+                  <p>Shareholder, Jorgensen, Brownell & Pepin, P.C.</p>
+                </div>
+                <div class="card-body">
+                  <div class="card-content">
+                    <div class="card-title">
+                    </div>
+                    <div class="card-text">
+                      <p>We’ve cycled through several marketing companies over the years, and WISE Digital has an
+                        excellent handle on marketing law firms online. They’ve done an outstanding job actively
+                        managing
+                        our online presence. We’ve significantly improved our organic search positioning.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="card">
+                <div class="card-header">
+                  <img src="profile2.jpeg">
+                  <h1>Chase Birky</h1>
+                  <p>CEO + Co-Founder, Dark Horse CPA </p>
+                </div>
+                <div class="card-body">
+                  <div class="card-content">
+                    <div class="card-title">
+                    </div>
+                    <div class="card-text">
+                      <p>Some companies are vendors...others are partners to your business. WISE is definitely the
+                        latter.
+                        They have partnered with us strategically on all things digital, created an incredible website
+                        (probably the best in the industry to be honest), built the underlying SEO, optimized our Google
+                        AdWords, helped us tremendously on the creative. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="card">
+                <div class="card-header">
+                  <img src="profile3.jpeg">
+                  <h1>Schuyler V.V. Hoffman</h1>
+                  <p>Partner, Hoffman & Forde</p>
+                </div>
+                <div class="card-body">
+                  <div class="card-content">
+                    <div class="card-title"></div>
+                    <div class="card-text">
+                      I have worked with many marketing experts, and you will not find anyone nearly
+                      as talented and great to work with as Patrick & his team. Put simply - they are the best. No one
+                      has
+                      even come close.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="card">
+                <div class="card-header">
+                  <img src="profile4.jpeg">
+                  <h1>Gary Stephens</h1>
+                  <p>President, Stephens Plumbing, Heating & Air Conditioning</p>
+                </div>
+                <div class="card-body">
+                  <div class="card-content">
+                    <div class="card-title">
+                    </div>
+                    <div class="card-text">
+                      <p>Working with WISE Digital Partners has been a great experience since day one. Patrick (the
+                        owner)
+                        came to our office to lay out what his company had to offer and they have delivered on every
+                        promise. It's a breath of fresh air to be dealing with a marketing/advertising company that is
+                        so
+                        professional and transparent.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="card">
+                <div class="card-header">
+                  <img src="profile5.jpeg">
+                  <h1>Jeanné Woodfin</h1>
+                  <p>President & Owner, XenaTech Software</p>
+                </div>
+                <div class="card-body">
+                  <div class="card-content">
+                    <div class="card-title">
+                    </div>
+                    <div class="card-text">
+                      <p>WISE Digital redesigned our website to create a better picture of our current capabilities and
+                        built out a better advertising model for our business. The create a team concept with their
+                        customer – you are in it together. WISE is highly engaged throughout the entire process. The end
+                        results speak for themselves.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="card">
+                <div class="card-header">
+                  <img src="profile6.jpeg">
+                  <h1>David Hoffman</h1>
+                  <p>President, Hoffman Hanono Insurance</p>
+                </div>
+                <div class="card-body">
+                  <div class="card-content">
+                    <div class="card-title">
+                    </div>
+                    <div class="card-text">
+                      <p>We’ve been a long time client of WISE Digital Partners. We decided it was time for a new
+                        website, because the last one WISE built us was 4-5 years old. We needed a bunch of updates and
+                        it felt time to start fresh..</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        $(document).ready(function () {
+          $('.carousel').slick({
+            speed: 500,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            // autoplay: true,
+            // autoplaySpeed: 2000,
+            dots: true,
+            centerMode: true,
+            responsive: [{
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                centerMode: true,
 
+              }
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script type="text/javascript"
-  src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+            }, {
+              breakpoint: 800,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 2,
+                dots: true,
+                infinite: true,
 
-<script type="text/javascript">
-  $('.your-class').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-  }); -->
-</div>
-
-
-
+              }
+            }, {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+              }
+            }]
+          });
+        });
+      </script>
 </body>
 
 </html>

@@ -1,0 +1,34 @@
+.slick-slider-inner {
+    padding: 0px 20px;
+}
+
+
+.slick-slider-outer img {
+    height: 300x;
+    border-radius: 20px;
+    width: 50%;
+    transition: 0.3s all;
+
+}
+
+.slick-slider img {
+    height: 500px;
+}
+
+.slick-track {
+    display: flex !important;
+    align-items: center;
+}
+
+.slick-current>div>div>div>img {
+    /* transform: he; */
+    height: 400px;
+}
+
+.slick-slider-inner img {
+    height: 380px;
+    border-radius: 30px;
+    width: 98%;
+    transition: 0.3s all;
+    padding: 0 10px;
+}
