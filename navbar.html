@@ -33,7 +33,7 @@
         <div class="nav-links">
           <ul>
             <li class="nav-link" style="--i: .85s">
-              <a href="#about">About</a>
+              <a href="#about">About<i class="fas fa-caret-down"></i></a>
               <div class="dropdown">
                 <ul>
                   <li class="dropdown-link">
@@ -115,7 +115,7 @@
               <div class="dropdown">
                 <ul>
                   <li class="dropdown-link">
-                    <a href="#">NEST<sup>TM</sup></a>
+                    <a href="#">NEST<sub>TM</sub></a>
                   </li>
                   <li class="dropdown-link">
                     <a href="#">ADA Compliance</a>
@@ -143,7 +143,7 @@
                     <a href="#">Financial</a>
                   </li>
                   <li class="dropdown-link">
-                    <a href="#">Legal<i class="fas fa-caret-down"></i></a>
+                    <a href="#">Legal</a>
                     <div class="dropdown second">
                     </div>
                   </li>
@@ -194,9 +194,9 @@
           <div class="log-sign log-sign-first">
             <div class="btn-transparent"> Contact</div>
           </div>
-          <div class="log-sign log-sign-sec">
+          <!-- <div class="log-sign log-sign-sec">
             <div class="btn-transparent"> Request Proposal</div>
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="hamburger-menu-container">
@@ -636,8 +636,9 @@
             speed: 500,
             slidesToShow: 3,
             slidesToScroll: 1,
-            // autoplay: true,
-            // autoplaySpeed: 2000,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 2000,
             dots: true,
             centerMode: true,
             responsive: [{
@@ -814,7 +815,7 @@
       <div class="award-slide">
         <img src="award(0).jpeg" alt="">
         <img src="award(2).jpeg" alt="">
-        <img src="award(3).jpeg" alt="">
+        <img src="award(3).jpeg" alt="">  
         <img src="award(4).jpeg" alt="">
         <img src="award(5).jpeg" alt="">
         <img src="award(6).jpeg" alt="">
@@ -839,7 +840,7 @@
               {
                 breakpoint: 1024,
                 settings: {
-                  slidesToShow: 9,
+                  slidesToShow: 6,
                   slidesToScroll: 3,
                   infinite: true,
 
@@ -905,7 +906,7 @@
               {
                 breakpoint: 1048,
                 settings: {
-                  slidesToShow: 6,
+                  slidesToShow: 4,
                   slidesToScroll: 3,
                   infinite: true,
 
@@ -937,12 +938,18 @@
       <div class="company-heading">
         Get to Know Us
       </div>
-      <div class="background-image">
-      </div>
       <div class="background-image-para">
-        <p>Company</p>
-        <p>Team</p>
-        <p>How WISE Works</p>
+        <p class="first-bg-img">Company
+<img src="background(1).jpeg"  alt="">
+
+        </p>
+        <p class="background-image-first">Team
+<img src="background(3).jpeg" alt="">
+
+        </p>
+        <p class="background-image-first">How WISE Works
+          <img src="background(2).jpeg" alt="">
+        </p>
       </div>
     </div>
   </div>
